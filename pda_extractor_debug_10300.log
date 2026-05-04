@@ -1,0 +1,413 @@
+2026-05-04 07:26:27,335 - INFO - core.database_manager - [database_manager.py:32] - Base de datos de la aplicación ubicada en: C:/Users/Usuario/AppData/Roaming/Business & Services/AsistenteContable\databases\actividades_usuario.db
+2026-05-04 07:26:57,622 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:229] - Aplicando Jitter de Arranque: 2447ms para desincronizar enjambre.
+2026-05-04 07:27:03,525 - INFO - features.pda_extractor.driver_config - [driver_config.py:104] - Configurando para usar un perfil de Chrome temporal y limpio.
+2026-05-04 07:27:06,448 - INFO - features.pda_extractor.driver_config - [driver_config.py:125] - WebDriver configurado exitosamente con webdriver-manager.
+2026-05-04 07:27:06,533 - INFO - features.pda_extractor.pda_sequence_manager - [pda_sequence_manager.py:58] - Caché táctico: 563 cédulas previas cargadas. Se omitirán automáticamente.
+2026-05-04 07:27:06,533 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:282] - Flujo de trabajo iniciado. Cédula inicial: 'LOTE CARGADO (1 cédulas)'.
+2026-05-04 07:27:09,522 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:359] - ¡Sesión inyectada en el navegador virgen! Evadiendo autenticación SMS...
+2026-05-04 07:27:13,845 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:372] - Diagnóstico Post-Fénix: URL actual=https://sellingpoint.claro.com.ec/PT_pdaOne/#/login, Claves en Memoria=0
+2026-05-04 07:27:18,865 - WARNING - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:155] - Tokens expirados o inválidos. Se requiere autenticación manual.
+2026-05-04 07:27:18,881 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:163] - Inicialización completada. Esperando validación manual de PDA...
+2026-05-04 07:27:53,834 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:326] - Sesión Fénix (Tokens/Cookies) guardada exitosamente para rehidratación futura.
+2026-05-04 07:27:53,834 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:175] - PDA validada por el usuario. Reanudando extracción...
+2026-05-04 07:27:53,834 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:299] - [Evasión Anti-Bot] Pausa táctica normal de 3.6 segundos...
+2026-05-04 07:27:57,414 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:312] - --- Iniciando validación de cédula: 0910015395 ---
+2026-05-04 07:27:58,381 - INFO - features.pda_extractor.log_human_clicks_config - [log_human_clicks_config.py:12] - Inyectando logger de clics humanos para depuración (TRP)...
+2026-05-04 07:27:58,386 - INFO - features.pda_extractor.log_human_clicks_config - [log_human_clicks_config.py:99] - Logger de clics inyectado exitosamente.
+2026-05-04 07:27:58,386 - INFO - features.pda_extractor.pda_extractor_logic - [pda_extractor_logic.py:97] - TRP Inyectado: Escuchando clics humanos en pantalla de Identificación.
+2026-05-04 07:27:58,391 - WARNING - features.pda_extractor.pda_base_logic - [pda_base_logic.py:251] - Círculo de carga detectado. El servidor de Claro está experimentando lentitud.
+2026-05-04 07:27:59,403 - INFO - features.pda_extractor.pda_base_logic - [pda_base_logic.py:256] - El círculo de carga finalizó. Retomando automatización...
+2026-05-04 07:28:03,480 - INFO - features.pda_extractor.pda_extractor_logic - [pda_extractor_logic.py:262] - [Paso 1.5] Sincronizando posible popup de autoguardado...
+2026-05-04 07:28:06,659 - INFO - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:44] - [Paso 2] Botón Domicilio ACTIVO para 0910015395. Accediendo...
+2026-05-04 07:28:06,869 - WARNING - features.pda_extractor.pda_base_logic - [pda_base_logic.py:251] - Círculo de carga detectado. El servidor de Claro está experimentando lentitud.
+2026-05-04 07:28:07,881 - INFO - features.pda_extractor.pda_base_logic - [pda_base_logic.py:256] - El círculo de carga finalizó. Retomando automatización...
+2026-05-04 07:28:09,925 - INFO - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:105] - Domicilio extraído - Ciudad: GUAYAQUIL | Dir: Por definir - No usar Nro: villa:01
+2026-05-04 07:28:09,950 - INFO - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:227] - Select 'provincias' tiene datos originales válidos ('guayas'). Se respeta el valor de Claro.
+2026-05-04 07:28:09,990 - INFO - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:227] - Select 'cantones' tiene datos originales válidos ('guayaquil'). Se respeta el valor de Claro.
+2026-05-04 07:28:10,015 - INFO - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:288] - Parroquia ya tiene datos originales válidos ('ximena'). Se respeta el valor de Claro.
+2026-05-04 07:28:12,530 - WARNING - features.pda_extractor.pda_domicilio_logic - [pda_domicilio_logic.py:207] - Error menor al intentar acceder a Domicilio para 0910015395: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:12,534 - ERROR - features.pda_extractor.pda_extractor_service - [pda_extractor_service.py:96] - Error en el servicio de devolución de IVA: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 333, in process_cedula
+    if self.driver.current_url.lower().find("identificacion") == -1:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 587, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:12,616 - ERROR - features.pda_extractor.driver_manager - [driver_manager.py:229] - Error durante la ejecución del WebDriver: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 333, in process_cedula
+    if self.driver.current_url.lower().find("identificacion") == -1:
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 587, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:12,619 - ERROR - features.pda_extractor.driver_manager - [driver_manager.py:261] - No se pudo tomar la captura de pantalla: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551c4e]
+	chromedriver!(No symbol) [0x58f2c5]
+	chromedriver!(No symbol) [0x5bd726]
+	chromedriver!(No symbol) [0x5b8c62]
+	chromedriver!(No symbol) [0x5b8281]
+	chromedriver!(No symbol) [0x52501e]
+	chromedriver!(No symbol) [0x5255be]
+	chromedriver!(No symbol) [0x525a9d]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!(No symbol) [0x524b99]
+	chromedriver!(No symbol) [0x5241e0]
+	chromedriver!GetHandleVerifier [0xb32bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:12,619 - WARNING - features.pda_extractor.driver_manager - [driver_manager.py:246] - MODO DESARROLLO: El navegador se mantendrá abierto debido a un error crítico.
+2026-05-04 07:28:12,619 - WARNING - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:79] - Interceptada excepción crítica de Selenium (InvalidSessionIdException). Activando Protocolo Fénix...
+2026-05-04 07:28:12,620 - WARNING - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:536] - Ventana perdida o sesión inactiva. Iniciando Protocolo Fénix (Intento 1/2)...
+2026-05-04 07:28:12,620 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:367] - Protocolo Fénix: Reiniciando el entorno de automatización.
+2026-05-04 07:28:12,621 - INFO - features.pda_extractor.driver_config - [driver_config.py:104] - Configurando para usar un perfil de Chrome temporal y limpio.
+2026-05-04 07:28:14,643 - INFO - features.pda_extractor.driver_config - [driver_config.py:125] - WebDriver configurado exitosamente con webdriver-manager.
+2026-05-04 07:28:17,157 - WARNING - features.pda_extractor.driver_manager - [driver_manager.py:382] - No se pudo restaurar la sesión: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:17,158 - WARNING - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:161] - Error al inyectar URL inicial asíncrona: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:17,158 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:495] - Protocolo Fénix: Re-inicialización completada. Reintentando la tarea fallida.
+2026-05-04 07:28:17,158 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:499] - --- Iniciando validación de cédula: 0910015395 (Post-Fénix) ---
+2026-05-04 07:28:17,255 - ERROR - features.pda_extractor.pda_extractor_service - [pda_extractor_service.py:96] - Error en el servicio de devolución de IVA: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 38, in process_cedula
+    current_url = self.driver.current_url.lower()
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 587, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:17,256 - ERROR - features.pda_extractor.driver_manager - [driver_manager.py:229] - Error durante la ejecución del WebDriver: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 38, in process_cedula
+    current_url = self.driver.current_url.lower()
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 587, in current_url
+    return self.execute(Command.GET_CURRENT_URL)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 458, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Usuario\Desktop\Jubilo\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 233, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:17,257 - ERROR - features.pda_extractor.driver_manager - [driver_manager.py:261] - No se pudo tomar la captura de pantalla: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=147.0.7727.138)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x74b373+10553]
+	chromedriver!GetHandleVerifier [0x74b4a4+10684]
+	chromedriver!(No symbol) [0x551e10]
+	chromedriver!(No symbol) [0x530923]
+	chromedriver!(No symbol) [0x5c3bcb]
+	chromedriver!(No symbol) [0x5da3a9]
+	chromedriver!(No symbol) [0x5bd606]
+	chromedriver!(No symbol) [0x590039]
+	chromedriver!(No symbol) [0x590df4]
+	chromedriver!GetHandleVerifier [0x9cddb4+292f94]
+	chromedriver!GetHandleVerifier [0x9c937d+28e55d]
+	chromedriver!GetHandleVerifier [0x9e8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x764c18+29df8]
+	chromedriver!GetHandleVerifier [0x76c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x753c78+18e58]
+	chromedriver!GetHandleVerifier [0x753e42+19022]
+	chromedriver!GetHandleVerifier [0x73d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76ee5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x7740d83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x7740d7c1+231]
+
+2026-05-04 07:28:17,257 - WARNING - features.pda_extractor.driver_manager - [driver_manager.py:246] - MODO DESARROLLO: El navegador se mantendrá abierto debido a un error crítico.
+2026-05-04 07:28:17,258 - WARNING - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:79] - Interceptada excepción crítica de Selenium (NoSuchWindowException). Activando Protocolo Fénix...
+2026-05-04 07:28:17,258 - WARNING - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:536] - Ventana perdida o sesión inactiva. Iniciando Protocolo Fénix (Intento 2/2)...
+2026-05-04 07:28:17,258 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:367] - Protocolo Fénix: Reiniciando el entorno de automatización.
+2026-05-04 07:28:17,259 - INFO - features.pda_extractor.driver_config - [driver_config.py:104] - Configurando para usar un perfil de Chrome temporal y limpio.
+2026-05-04 07:28:19,215 - INFO - features.pda_extractor.driver_config - [driver_config.py:125] - WebDriver configurado exitosamente con webdriver-manager.
+2026-05-04 07:28:22,370 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:359] - ¡Sesión inyectada en el navegador virgen! Evadiendo autenticación SMS...

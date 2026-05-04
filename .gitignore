@@ -1,0 +1,36 @@
+# Archivos y carpetas generados por Python/PyInstaller
+build/
+dist/
+*.spec
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos Virtuales
+venv/
+venv_py313/
+*.env
+.env
+
+# Archivos de base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos de salida y temporales
+output/
+temp.txt
+output_test_pdf_11_cols_info_section/
+latest_version.txt
+
+# Archivos específicos del editor
+.idea/
+*.swp
+*~
+
+# Archivos de respaldo de editores
+*.bak
+
+# Pytest cache
+.pytest_cache/

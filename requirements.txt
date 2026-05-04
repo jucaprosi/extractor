@@ -1,0 +1,36 @@
+# Este archivo define las dependencias necesarias para el entorno de desarrollo y pruebas.
+# Instalar todas las dependencias con: pip install -r requirements.txt
+
+# Core del framework de pruebas
+pytest
+
+# Plugin para mocking y fixtures de prueba
+pytest-mock
+
+# Manipulación de datos y DataFrames
+pandas
+pandas-stubs # Para type hints y autocompletado en el IDE
+
+# Framework de la GUI (necesario para type hints y mocks)
+PySide6
+
+# Motores para la lectura/escritura de archivos Excel
+openpyxl
+xlsxwriter
+
+# Dependencias descubiertas durante la importación para que las pruebas se ejecuten
+fpdf2
+PyYAML
+
+# Cliente para servicios web SOAP (SRI)
+zeep
+
+# Automatización de navegador web para descarga de comprobantes
+selenium
+webdriver-manager # Para gestionar los drivers de selenium automáticamente
+
+# Utilidad para obtener información del sistema (ej. procesos en ejecución)
+psutil
+
+# Cifrado simétrico para datos sensibles (ej. contraseñas)
+cryptography

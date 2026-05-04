@@ -1,0 +1,37 @@
+2026-05-04 16:42:36,593 - INFO - core.database_manager - [database_manager.py:32] - Base de datos de la aplicación ubicada en: C:/Users/Usuario/AppData/Roaming/Business & Services/AsistenteContable\databases\actividades_usuario.db
+2026-05-04 16:42:51,651 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:183] - Aplicando Jitter de Arranque: 377ms para desincronizar enjambre.
+2026-05-04 16:42:52,037 - INFO - features.pda_extractor.driver_config - [driver_config.py:104] - Configurando para usar un perfil de Chrome temporal y limpio.
+2026-05-04 16:42:54,096 - INFO - features.pda_extractor.driver_config - [driver_config.py:125] - WebDriver configurado exitosamente con webdriver-manager.
+2026-05-04 16:42:54,179 - INFO - features.pda_extractor.pda_sequence_manager - [pda_sequence_manager.py:58] - Caché táctico: 1800 cédulas previas cargadas. Se omitirán automáticamente.
+2026-05-04 16:42:54,180 - INFO - features.pda_extractor.pda_workflow_executor - [pda_workflow_executor.py:114] - Flujo de trabajo iniciado. Cédula inicial: 'LOTE CARGADO (23615 cédulas)'.
+2026-05-04 16:42:57,025 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:363] - ¡Sesión inyectada en el navegador virgen! Evadiendo autenticación SMS...
+2026-05-04 16:43:01,307 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:376] - Diagnóstico Post-Fénix: URL actual=https://sellingpoint.claro.com.ec/PT_pdaOne/#/login, Claves en Memoria=0
+2026-05-04 16:43:06,331 - WARNING - features.pda_extractor.pda_workflow_executor - [pda_workflow_executor.py:44] - Tokens expirados o inválidos. Se requiere autenticación manual.
+2026-05-04 16:43:06,338 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:172] - Inicialización completada. Esperando validación manual de PDA...
+2026-05-04 16:43:12,306 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:328] - Sesión Fénix (Tokens/Cookies) guardada exitosamente para rehidratación futura.
+2026-05-04 16:43:12,306 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:184] - PDA validada por el usuario. Reanudando extracción...
+2026-05-04 16:43:12,307 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:353] - [Evasión Anti-Bot] Pausa táctica normal de 3.5 segundos...
+2026-05-04 16:43:15,837 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:208] - Salto táctico: Se omitieron 190 cédulas que ya existían en la base de datos.
+2026-05-04 16:43:15,838 - INFO - features.pda_extractor.pda_extractor_workflow - [pda_extractor_workflow.py:220] - --- Iniciando validación de cédula: 0910006931 ---
+2026-05-04 16:43:15,844 - ERROR - features.pda_extractor.pda_extractor_service - [pda_extractor_service.py:96] - Error en el servicio PDA Extractor: El token JWT de Claro ha expirado.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 373, in process_cedula
+    raise e
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 42, in process_cedula
+    raise SessionExpiredException("El token JWT de Claro ha expirado.")
+features.pda_extractor.exceptions.SessionExpiredException: El token JWT de Claro ha expirado.
+2026-05-04 16:43:15,848 - ERROR - features.pda_extractor.driver_manager - [driver_manager.py:218] - Error durante la ejecución del WebDriver: El token JWT de Claro ha expirado.
+Traceback (most recent call last):
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_service.py", line 58, in extract_pda_data
+    result_data = processor.process_cedula(cedula)
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 373, in process_cedula
+    raise e
+  File "C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\pda_extractor_logic.py", line 42, in process_cedula
+    raise SessionExpiredException("El token JWT de Claro ha expirado.")
+features.pda_extractor.exceptions.SessionExpiredException: El token JWT de Claro ha expirado.
+2026-05-04 16:43:15,907 - INFO - features.pda_extractor.driver_manager - [driver_manager.py:261] - Captura de pantalla de error guardada en: C:\Users\Usuario\Desktop\PDA\src\features\pda_extractor\error_screenshot_pda_extractor_2588.png
+2026-05-04 16:43:15,907 - WARNING - features.pda_extractor.driver_manager - [driver_manager.py:248] - MODO DESARROLLO: El navegador se mantendrá abierto debido a un error crítico.
+2026-05-04 16:43:15,908 - CRITICAL - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:119] - ¡Token de sesión expirado! Deteniendo operaciones desatendidas.
+2026-05-04 16:43:17,746 - INFO - features.pda_extractor.workflow_result_handler - [workflow_result_handler.py:134] - Nueva sesión validada. Reintentando la cédula interrumpida...

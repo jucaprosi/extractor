@@ -1,0 +1,18 @@
+{
+    "pythonVersion": "3.12",
+    // --- INICIO: MIGA DE PAN (2025-11-23) - CALIBRACIÓN FINAL DE PYLANCE ---
+    // NOTA DE INGENIERÍA: Se define explícitamente que el código fuente a analizar
+    // está únicamente dentro de la carpeta 'src'.
+    "include": ["src"],
+    "executionEnvironments": [
+        {
+            // Esta es la directiva clave. Le dice a Pylance que para cualquier
+            // archivo dentro de 'src', las importaciones absolutas (ej. 'from app_core...')
+            // deben resolverse como si 'src' fuera la carpeta raíz del proyecto.
+            "root": "src"
+        }
+    ],
+    "reportMissingImports": true,
+    "reportUnusedImport": "warning"
+    // --- FIN: MIGA DE PAN ---
+}
